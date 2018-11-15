@@ -1,0 +1,14 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Alauda">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/Alauda;component/HighlightedSwitch/Themes/Generic.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Alauda;component/IconButton/Themes/Generic.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Alauda;component/IconCheckButton/Themes/Generic.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Alauda;component/MultiComboBox/Themes/Generic.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Alauda;component/MultiLineView/Themes/Generic.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Alauda;component/NumberBox/Themes/Generic.xaml" />
+        <ResourceDictionary Source="pack://application:,,,/Alauda;component/ProgressBar/Themes/Generic.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
