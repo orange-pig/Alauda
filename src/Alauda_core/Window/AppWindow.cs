@@ -16,12 +16,16 @@ namespace Alauda
 {
     public class AppWindow : Window
     {
+        public static DependencyProperty CaptionHeightProperty = 
+            DependencyProperty.Register("CaptionHeight", typeof(double), typeof(AppWindow), 
+                new FrameworkPropertyMetadata(28d, FrameworkPropertyMetadataOptions.AffectsArrange, null));
+
 
         static AppWindow()
         {
             DefaultStyleKeyProperty.OverrideMetadata(typeof(AppWindow), new FrameworkPropertyMetadata(typeof(AppWindow)));
-
         }
+
 
         private WindowChrome _chrome;
 
@@ -40,9 +44,10 @@ namespace Alauda
 
         public double CaptionHeight
         {
-            get => _chrome.CaptionHeight;
+            get => (double)GetValue(CaptionHeightProperty);
             set
             {
+                SetValue(CaptionHeightProperty, value);
                 _chrome.CaptionHeight = value;
                 WindowChrome.SetWindowChrome(this, _chrome);
             }
